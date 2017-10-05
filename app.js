@@ -28,7 +28,7 @@
  		var stringDescifrado = '';
  		for(i=0; i<upper.length; i++) {                      //recorrer nuestro string 
  			position = upper.charCodeAt(i);                  //para cada posicion obtener indice ASCII 
- 			var formula = (position-65-33)%26+65;            //aplicar formula para descifrar 
+ 			var formula = (position+65-33)%26+65;            //aplicar formula para descifrar 
  			descifrado = String.fromCharCode(formula);       //de los indices ahora obtenemos las letras equivalentes en ASCII 
  			arrayDescifrado.push(descifrado);                //ingresamos cada letra en un array
  		 	stringDescifrado = arrayDescifrado.join('');     //convertimos nuestro array a un string
